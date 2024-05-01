@@ -31,8 +31,12 @@ jobs:
         
       #run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
 
-    - name: selenium tests
+  selenium_test:
+    name: Run Selenium tests
+    needs: push_to_registry
+    runs-on: ubuntu-latest
 
+    steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
@@ -54,6 +58,6 @@ jobs:
         sudo chmod +x /usr/local/bin/chromedriver
 
     - name: Run tests
-      run: python manage.py test
+      run: python bus-reservation-system-in-django/myproject/manage.py test
       env:
         DJANGO_SETTINGS_MODULE: myproject.settings
