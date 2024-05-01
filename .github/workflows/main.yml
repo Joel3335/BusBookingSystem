@@ -9,7 +9,7 @@ on:
 jobs:
 
   push_to_registry:
-    name: Push Docker image to DockerHub
+    name: Push Docker image to DockerHub 
     runs-on: ubuntu-latest
 
     steps:
