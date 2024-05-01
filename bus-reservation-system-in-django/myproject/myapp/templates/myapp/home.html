@@ -1,4 +1,8 @@
 {% extends 'myapp/base.html' %}
+{% load static %}
 {% block content %}
 <center><h1>Welcome to Bus Reservation System</h1></center>
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="{% static 'bus.avif' %}" alt="My Image" style="margin: auto;">
+</div>
 {% endblock %}

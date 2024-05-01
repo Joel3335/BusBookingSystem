@@ -121,3 +121,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Use os.path.join() to join paths
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'myapp/static/mysite/images')]
