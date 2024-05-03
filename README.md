@@ -4,11 +4,12 @@
 Follow these steps to install the bus booking system:
 
 Clone the Repository: Clone the bus booking system repository from the project's GitHub repository.
-git clone https://github.com/cassiuscolaco/BusBooking.git
+    git clone https://github.com/Joel3335/BusBookingSystem.git
+
 
 Navigate to the Project Directory: Change your current directory to the root directory of the bus booking system.
 
-    cd "BusBooking/bus-reservation-system-in-django/myproject"
+    cd "BusBookingSystem/bus-reservation-system-in-django/myproject"
 
 Create and Activate Virtual Environment (Optional): If you opted for using a virtual environment, create and activate it.
 
